@@ -9,9 +9,10 @@
 - [[#available-scripts][Available Scripts]]
 
 * About BashOps
-This is a treasure chest of handy Bash scripts to make setting up fresh installs a breeze - beacuse who likes doing the same stuff over and over!
+This is a treasure chest of handy Bash scripts to make setting up fresh installs a breeze - because who likes doing the same stuff over and over!
+
 Made with bash by Chef
-Github: https://github.com/chefxor/
+- Github: https://github.com/chefxor/
 
 * Dependencies
 For most of them its just bash. Each of the scripts serve different purpose and the required dependencies would be already installed via the scripts themselves.
