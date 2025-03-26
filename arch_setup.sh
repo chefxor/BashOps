@@ -15,7 +15,7 @@ sudo pacman -S alacritty awesome rofi picom network-manager-applet ufw zsh neovi
 yay -S ttf-hack-nerd ttf-firacode-nerd ttf-iosevkaterm-nerd ttf-mononoki-nerd ttf-terminus-nerd
 
 # Setting up neovim
-sh ~/LazyOps/nvim_setup.sh
+sh ~/BashOps/nvim_setup.sh
 
 # Setting up firwall
-sh ~/LazyOps/firewall_setup.sh
+sh ~/BashOps/firewall_setup.sh

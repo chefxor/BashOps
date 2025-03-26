@@ -18,8 +18,7 @@ Made with bash by Chef
 For most of them its just bash. Each of the scripts serve different purpose and the required dependencies would be already installed via the scripts themselves.
 
 * Available Scripts
-
-Below table contains the list of scripts which are currently available. Planning to add few more soon.
+Below table contains the details of scripts which are currently available. Planning to add few more soon.
 
 | Script            | Description                                                           |
 |-------------------+-----------------------------------------------------------------------|
@@ -32,5 +31,6 @@ Below table contains the list of scripts which are currently available. Planning
 | emacs_startup.sh  | Auto-startup script for emacs daemon to run in the background         |
 | arch_setup.sh     | Sets up a fresh arch install with the neccessary packages             |
 | gpg_setup.sh      | Helps generate a GPG keys on the machine                              |
+| zsh_setup.sh      | Simple script for installing and setting few useful plugins           |
 
 *NOTE:* Most of these scripts are created keeping Arch Linux in mind. Required changes will be made soon for better compatibility.

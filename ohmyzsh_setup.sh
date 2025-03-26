@@ -28,4 +28,3 @@ echo "Reloading Zsh configuration..."
 source ~/.zshrc
 
 echo "Oh My Zsh installation complete! Restart your terminal or run 'zsh' to start using it."
-
