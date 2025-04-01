@@ -24,4 +24,3 @@ git branch -M main
 git push -u origin main
 
 echo "Git repository successfully linked to GitHub: $GITHUB_USER/$FOLDER_NAME"
-
