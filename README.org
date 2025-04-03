@@ -20,6 +20,8 @@ Most scripts only require Bash. Any necessary dependencies are installed automat
 * Available Scripts
 The table below lists the current scripts. More will be added soon.
 
+*Please note that few of these scripts needs to be run as root. Use sudo wherever neccessary*
+
 | Script            | Description                                                           |
 |-------------------+-----------------------------------------------------------------------|
 | nvim_setup.sh     | Installs nvim and sets up the vim-plug (plugin manager)               |
@@ -34,4 +36,4 @@ The table below lists the current scripts. More will be added soon.
 | zsh_setup.sh      | Simple script for installing and setting few useful plugins           |
 | qemu_setup.sh     | Install the QEMU virualization platform along with virt-manager       |
 
-/Note: These scripts are primarily designed for Arch Linux. Updates for better compatibility are coming soon/
+/These scripts are primarily designed for Arch Linux. Updates for better compatibility are coming soon/
