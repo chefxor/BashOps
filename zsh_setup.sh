@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Zsh
-sudo pacman -S --noconfirm zsh
+pacman -S --noconfirm zsh
 
 # Clone essential plugins
 ZSH_PLUGIN_DIR="$HOME/.zsh/plugins"
@@ -18,5 +18,5 @@ source ~/.zshrc
 read -p "Change default shell to Zsh? (y/n): " choice
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     read -p "Enter username (press Enter for '$USER'): " username
-    sudo chsh -s "$(command -v zsh)" "${username:-$USER}"
+    chsh -s "$(command -v zsh)" "${username:-$USER}"
 fi

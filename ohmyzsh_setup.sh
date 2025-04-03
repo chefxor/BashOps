@@ -4,7 +4,7 @@ set -e  # Exit on error
 
 # Install dependencies
 echo "Installing dependencies..."
-sudo apt update && sudo apt install -y zsh git curl wget
+apt update && sudo apt install -y zsh git curl wget
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
