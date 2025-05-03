@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install Zsh
-pacman -S --noconfirm zsh
-
 # Clone essential plugins
 ZSH_PLUGIN_DIR="$HOME/.zsh/plugins"
 mkdir -p "$ZSH_PLUGIN_DIR"
