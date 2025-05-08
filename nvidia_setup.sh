@@ -7,18 +7,18 @@ select distro in "Arch Linux" "Fedora"; do
     case $distro in
         "Arch Linux")
             echo "Installing NVIDIA drivers on Arch Linux..."
-            sudo pacman -Syu --noconfirm
-            sudo pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
+            pacman -Syu --noconfirm
+            pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
             grub_cfg="/boot/grub/grub.cfg"
             grub_default="/etc/default/grub"
             break
             ;;
         "Fedora")
             echo "Installing NVIDIA drivers on Fedora..."
-            sudo dnf update -y
-            sudo dnf install -y fedora-workstation-repositories
-            sudo dnf config-manager --set-enabled rpmfusion-nonfree-nvidia-driver
-            sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
+            dnf update -y
+            dnf install -y fedora-workstation-repositories
+            dnf config-manager --set-enabled rpmfusion-nonfree-nvidia-driver
+            dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
             grub_cfg="/boot/efi/EFI/fedora/grub.cfg"
             grub_default="/etc/default/grub"
             break
@@ -36,12 +36,12 @@ if [[ "$wayland" =~ ^[Yy]$ ]]; then
     if grep -q "nvidia_drm.modeset=1" "$grub_default"; then
         echo "KMS already set."
     else
-        sudo sed -i 's/GRUB_CMDLINE_LINUX="/GRUB_CMDLINE_LINUX="nvidia_drm.modeset=1 /' "$grub_default"
+        sed -i 's/GRUB_CMDLINE_LINUX="/GRUB_CMDLINE_LINUX="nvidia_drm.modeset=1 /' "$grub_default"
         echo "Updating GRUB configuration..."
         if [[ "$distro" == "Arch Linux" ]]; then
-            sudo grub-mkconfig -o "$grub_cfg"
+            grub-mkconfig -o "$grub_cfg"
         else
-            sudo grub2-mkconfig -o "$grub_cfg"
+            grub2-mkconfig -o "$grub_cfg"
         fi
     fi
 fi
