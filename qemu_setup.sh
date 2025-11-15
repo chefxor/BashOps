@@ -23,7 +23,7 @@ pacman -Syu --noconfirm
 
 # Install required packages
 echo_info "Installing QEMU, libvirt, and virt-manager..."
-pacman -S --noconfirm qemu-full libvirt virt-manager
+apt install qemu-full libvirt virt-manager -y
 
 # Enable and start libvirt service
 echo_info "Enabling and starting libvirtd service..."

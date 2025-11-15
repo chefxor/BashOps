@@ -36,5 +36,3 @@ The table below lists the current scripts. More will be added soon.
 | zsh_setup.sh      | Simple script for installing and setting few useful plugins           |
 | qemu_setup.sh     | Install the QEMU virualization platform along with virt-manager       |
 | nvidia_setup.sh   | Installs nvidia drivers for arch and fedora based machines            |
-
-/These scripts are primarily designed for Arch Linux. Updates for better compatibility are coming soon/
